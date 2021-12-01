@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-y: none;
+    overflow-x: none;
+   
+}
+@media screen and (max-width:768px) {
+    .windw{
+        width: 100%;
+    }    
+}
+body{
+    background-color: black;
+}
+
+.windw{
+    position: fixed;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 979px;
+    margin-left: 25%;
+    background-image: url("./RGB-lighting-desktop.gif");
+    background-repeat: no-repeat;
+    background-size: 1080px;
+}
+.login{
+    position: fixed;
+    margin-top: 260px;
+    margin-left: 100px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    position: center;
+}
+.user-mail{
+    padding: 5px;
+    width: 100%;
+    border-radius: 2px;
+    border-color: lightblue;
+}
+.user-password{
+    padding: 5px;
+    width: 100%;
+    border-radius: 2px;
+    border-color:lightblue;
+    margin-top: 5px;
+}
+.login-botton{
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 10px;
+    width: 50%;
+    float: center;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(182, 182, 182);
+    animation-name: changergb;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+/* color: black;
+
+    border-radius: 8px;
+    background-color: rgb(182, 182, 182); */
+
+@keyframes changergb {
+    
+        0% {background-color:red;}
+        50% {background-color:green;}
+        100% {background-color:blue;}
+    }
+.login-botton:hover{
+    width: 55%;
+    transition: 2s;
+}

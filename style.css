@@ -1,0 +1,266 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width:100%;
+    }
+    .list-products{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .left-list{
+        width: 100%;
+        height: 100%;
+        margin-top: 50%;
+        display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+        header{
+            width:100%;
+        }
+        .list-products{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .left-list{
+            width: 100%;
+            height: 100%;
+            margin-top: 50%;
+            display: block;
+        }
+    
+    }
+}
+
+body{ 
+   background: white;
+} 
+
+.apr{
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    color:whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} /* Apresentação site */
+header{
+    background-image: url("./IMAGEM\ RGB-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+} /* Cabeçalho */
+.marca{
+    color: ghostwhite;
+    width: 200px;
+    height: 75px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    background-image: url("./logo-tipo.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+} /* Logo tipo loja */
+
+
+
+.search{
+    color: black;
+    margin-left: 20%;
+    padding: 2px;
+    border-style: 8px;
+    width: 40%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgb(182, 182, 182);
+} /* Campo de Pesquisa  */
+
+@keyframes changergb {
+    
+    0% {background-color:red;}
+    50% {background-color:green;}
+    100% {background-color:blue;}
+} /* Botão pesquisa animação*/
+button{
+    background: white;
+} /* Botão pesquisa color */
+
+.botao{
+    color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    animation-name: changergb;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} /* Botão pesquisa */
+.botao:hover{
+    font-size: 1.2em;
+    transition: 1s;
+} /* Animação botão*/
+.car-buy{
+    width: 60px;
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    position: relative;
+
+} /* Carrinho de compras   */
+
+
+.resultCart{
+    color: white;
+    margin-left: 300px;
+    position: absolute;
+}
+.banners{
+    list-style: none;
+    display: flex;
+    margin-top: 400px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    cursor: pointer;
+} /* Banners Vendas  */
+.products{
+    /* display: inline-block; */
+    margin-top: 10px;
+}
+.login-user{
+    width: 60px;
+    float: right;
+    margin-right: 2%;
+    cursor: pointer;
+    
+} /* Login de usuário */
+.left-list{
+    margin-left: 10px;
+    font-size:1.2em;
+    border-style:dotted;
+    width: 200px;
+    border-width: 3px;
+    padding: 40px;
+    border-color:rgb(182, 182, 182);
+
+    float: left;
+}
+.left-list, .list-products{
+    align-items: center;
+    margin-top: 50px;
+}
+.list-products,
+.list-products2,
+.pc-products,
+.pcgamer1{
+
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    margin-left: 75px;
+}
+
+
+.pcgamer2:hover{
+
+    border-color: grey;
+    
+}
+.pc-products li{
+    border-style: groove;
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+}
+ul{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.pcgamer-img1{
+    align-items: center;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    
+}
+
+.buy-button-pc {
+    width: 110px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 1px 4px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    justify-content: right;
+    gap: 300px;
+    /* align-items:flex-start; */
+    
+   }
+   
+   .buy-button-pc:hover {
+    background-image: linear-gradient(90deg, #53cbef 0%, #dbb108 50%, #d15757 75%, #53cbef 100%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+   }
+   
+   @keyframes slidernbw {
+    to {
+     background-position: 20vw;
+    }
+   }
+.ordem{
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+.ordem button{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 2px 1px;
+    color: white;
+}
+.footer{
+    align-items: center;
+}
+
+#result{
+    color: white;
+    display: flex;
+    align-items: center;
+    float: right;
+    border-radius: 10px;
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="#">
+    <title>RGBinfo</title>
+</head>
+
+<body id="color-body">
+    <div class="apr">
+        <h3 id="timer"></h3>
+        <span id="promotion"></span>
+
+    </div>
+    <header>
+        <!-- Logo / Marca -->
+        <span class="marca"><button class="marca"><b>RGBinfo</b></button></span>
+
+
+        <!-- Fazer pesquisa -->
+        <span><input class="search" placeholder="Buscar"></span>
+        <button class="botao">Search</button>
+        <a href="login.html">
+            <!-- <img class="car-buy" src="./css/lighting_fx_mug_clockwise.gif"> -->
+            <img class="login-user" src="login.gif" src="login.html">
+        </a>
+
+        <a href="#" class="cart">
+            <img class="car-buy" src="lighting_fx_mug_clockwise.gif">
+
+            <span class="resultCart">
+                <a id="result">0</a>
+            </span>
+        </a>
+
+
+        <span>
+            <ul class="banners">
+                <li>
+                    <img class="banner1" src="SSDs-mancer-700x140v2.png">
+
+                </li>
+                <li>
+                    <img class="banner2" src="cadeiras-office-tgt-700x140.png">
+                </li>
+            </ul>
+        </span>
+    </header>
+    <div id="ord" class="ordem">
+        <button id="darkmode-button" onclick="dark()">
+            Dark Mode
+        </button>
+        <button id="lightmode-button" onclick="white()">
+            Light Mode
+        </button>
+    </div>
+    <div class="left-list">
+        <h4>Hardware</h4><br>
+        <p>Processador</p>
+        <p>Placa-mãe</p>
+        <p>Placa de vídeo</p>
+        <p>Memória Ram</p>
+        <p>SSD / HD</p>
+        <p>Fonte</p><br>
+
+        <h4>Periféricos</h4><br>
+        <p>Headset</p>
+        <p>Teclado</p>
+        <p>Mouse</p>
+        <p>Caixa de som</p>
+        <p>Mousepad</p>
+        <p>Monitor</p><br>
+
+        <h4>Computadores</h4><br>
+        <p>PC Casual</p>
+        <p>PC Gamer</p>
+        <p>MacBook</p>
+        <p>Notebook Casual</p>
+        <p>NoteBook Gamer</p>
+        <p>Suporte Notebook</p><br>
+
+        <h4>Smartphones</h4><br>
+        <p>Samsung</p>
+        <p>Apple</p>
+        <p>Xiaomi</p>
+        <p>Motorola</p>
+        <p>LG</p>
+
+    </div>
+    <div class="list-products">
+        <span class="list-products2">
+            <ul class="pc-products">
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+        </span>
+
+
+    </div>
+    <div class="list-products">
+        <span class="list-products2">
+            <ul class="pc-products">
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+        </span>
+
+
+    </div>
+    <div class="list-products">
+        <span class="list-products2">
+            <ul class="pc-products">
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+                <li class="pcgamer2">
+                    <img class="pcgamer-img1" src="pc-gamer-1.jpg">
+                    <h3 class="title-pcs">
+                        Pc Gamer Entrada
+                        AMD Ryzen 3400g 8gb de RAM
+                    </h3><br>
+                    <p style="font-size:30px; color: green;" class="price-pc"><br><b>R$3500</b></p>
+                    <a href="details.html"><button class="buy-button-pc">Comprar</button></a>
+                    <button onclick="addCart()" class="buy-button-pc">+Carrinho</button>
+                </li>
+        </span>
+
+
+    </div>
+
+
+
+    <script src="./script.js"> </script>
+
+</body>
+
+</html>
